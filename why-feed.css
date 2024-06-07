@@ -1,0 +1,293 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box!important;
+   }
+   .container-fluid,.row,.col-lg-12
+   {
+       padding:0!important;
+       margin:0!important;
+   }
+   .container-fluid
+   {
+       display: flex;
+       flex-direction:column;
+       min-height:100vh;
+   }
+   .navbar
+   {
+       background:#097D2B;
+       padding:10px!important;
+   }
+   a
+   {
+       color:#fff;
+       text-decoration:none!important;
+       font-weight:bold;
+   }
+   .main_grass
+    {
+        position:absolute;
+        right:0;
+        top:-40px;
+        height:40px;
+        width:100%;
+        background-image:url('../images/main-grass.png');
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center 50%;
+    }
+   .navbar-brand .org-logo
+   {
+       width:300px;
+       height:130px;
+   }
+   footer
+   {
+       position:relative;
+       height:auto;
+       background:#053F16;
+       margin-top:auto!important;
+   }
+   a{
+       text-decoration:none!important;
+   }
+   .footer-row ul li
+   {
+       list-style-type:none;
+   }
+   .footer-row a
+   {
+       font-size:15px;
+       text-decoration:none;
+       color:white;
+   }
+   .footer-row hr
+   {
+       margin:8px 0 8px!important;
+       width:100%;
+       border-color:white;
+   }
+   .footer-row img
+   {
+       width:20px;
+       height:20px;
+   }
+   .mobiles
+   {
+       display:none;
+   }
+   nav ul li
+   {
+       border-radius:5px;
+       transition:all .2s;
+   }
+   nav ul li:hover
+   {
+       background:#15A441;
+   }
+   nav ul li:hover > a
+   {
+       color:white;
+   }
+   nav ul li.active
+   {
+       background:#15A441;
+   }
+   hr
+   {
+       border-color:#a9dab3;
+   }
+   .content-row p
+   {
+       text-indent:60px;
+       text-align:justify;
+   }
+   /* .content-row p img
+   {
+       width:260px;
+       height:220px;
+   } */
+   .imgbox{
+       position:relative;
+       width:300px;
+       height:300px;
+       border:8px ridge white;
+       border-radius:10px;
+       background-size:cover;
+       background-repeat:no-repeat;
+       background-position:center center;
+       transition:all .5s;
+       float:right;
+   }
+   .title{
+       position:absolute;
+       background:black;
+       opacity:0.7;
+       color:white;
+       font-weight:bold;
+       font-size:20px;
+       left:0;
+       right:0;
+       bottom:0;
+       padding:20px!important;
+       text-align:center;
+       transition:all .2s;
+   }
+   .imgbox:hover{
+        filter:grayscale(100%);
+    }
+    .imgbox:hover > .title
+    {
+        visibility:hidden;
+    }
+   .aeroplane{
+    background-image:url('../images/feed_aeroplane1.png');
+   }
+   .food_processing{
+    background-image:url('../images/feed_food1.png');
+    float:left;
+   }
+   .pu-wrapper
+   {
+       height:350px;
+   }
+   .epm{
+    background-image:url('../images/feed_epm1.png');
+   }
+   .fpos
+   {
+    background-image:url('../images/feed_fpos1.png');
+    float:left;
+   }
+   .farmers
+   {
+    background-image:url('../images/feed_farmer1.png');
+   }
+   
+   .content-row ul li{
+    margin-left:120px;
+   }
+   h1,h2,h3,h4,h5,h6
+   {
+       color:#053F16;
+   }
+   .content-header-img
+   {
+       width:80px;
+       height:80px;
+       margin-top:-10px;
+   }
+   .burger
+   {
+       width:40px;
+       height:40px;
+   }
+   button{
+       border:none!important;
+       outline:none!important;
+   }
+   .read-more-icon img
+   {
+     width:220px;
+     height:100px;
+   }
+   .read-more-icon span
+   {
+    color:#053F16;
+    font-weight:bold;
+   }
+   /* .read-more
+   {
+       display:none;
+   } */
+   .read-more-icon
+   {
+       cursor:pointer;
+   }
+   .toggleContent
+   {
+       display:none;
+   }
+   .org-logo
+   {
+       display:inline-block!important;
+   }
+   .resp-logo
+   {
+       display:none!important;
+   }
+   .smedia ul li
+    {
+        margin-right:8px!important;
+    }
+    .msmedia li{
+        margin-right:8px!important;
+    }
+   @media only screen and (max-width:1000px)
+   {
+        .resp-logo
+        {
+            display:inline-block!important;
+        }
+        .org-logo
+        {
+            display:none!important;
+        }
+        .read-more-icon img
+        {
+            width:140px;
+            height:70px;
+        }
+      .content-row ul li{
+          margin-left:50px;
+       }
+       .imgbox
+       {
+           float:none;
+           margin:0 auto!important;
+           display:block!important;
+       }
+       .pu-wrapper
+        {
+            height:auto;
+        }
+       nav ul li
+       {
+           padding-left:10px!important;
+       }
+       .content-row p
+       {
+           text-indent:40px;
+           text-align:justify;
+       }
+   }
+   @media only screen and (max-width:600px)
+   {
+       .footer-row{
+           height:auto;
+       }
+       .footer-row a,li
+       {
+           font-size:12px;
+       }
+       .mobiles
+       {
+           display:block;
+       }
+       .desktops
+       {
+           display:none;
+       }
+   }
+   @media only screen and (min-width:640px) and (max-width:1000px)
+   {
+       .mobiles
+       {
+           display:block;
+       }
+       .desktops
+       {
+           display:none;
+       }
+   }
